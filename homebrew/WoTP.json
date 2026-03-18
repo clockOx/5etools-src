@@ -180,8 +180,8 @@
 				15
 			],
 			"hp": {
-				"average": 4,
-				"formula": "1d8"
+				"average": 97,
+				"formula": "15d12"
 			},
 			"speed": {
 				"walk": 30

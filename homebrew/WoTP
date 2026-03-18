@@ -1,0 +1,278 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WhispersofthePoppets",
+				"abbreviation": "WoTP",
+				"full": "Whispers of the Poppets",
+				"version": "1.0.0",
+				"authors": [
+					"clockOx"
+				],
+				"convertedBy": [
+					"clockOx"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"uniqueId": "9559d55a-39e4-4b3c-9a01-391345081f7a",
+			"name": "Viorela Codrin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "16d8",
+				"average": 72
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 16,
+			"int": 20,
+			"wis": 18,
+			"cha": 16,
+			"passive": 14,
+			"cr": "6",
+			"shortName": "Viorela",
+			"senses": [
+				"truesight 20 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"skill": {
+				"religion": "+7",
+				"intimidation": "+5",
+				"insight": "+8",
+				"arcana": "+9"
+			},
+			"save": {
+				"int": "+7",
+				"dex": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Viorela casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Chill Touch|XPHB}",
+								"{@spell Mage Hand|XPHB}",
+								"{@spell Message|XPHB}",
+								"{@spell Prestidigitation|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Command|XPHB}",
+								"{@spell Mage Armor|XPHB}",
+								"{@spell Ray of Sickness|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Hold Person|XPHB}",
+								"{@spell Tasha's Mind Whip|TCE}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Animate Dead|XPHB}",
+								"{@spell Enemies Abound|XGE}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell Arcane Eye}",
+								"{@spell Blight}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Viorela has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) Piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "3e91ba66-0dd2-4066-9cf9-640ac665dc9e",
+			"name": "Francisc Codrin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 16,
+			"cha": 14,
+			"passive": 17,
+			"cr": "0",
+			"shortName": "Francisc",
+			"senses": [
+				"truesight 20 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+4",
+				"nature": "+3",
+				"perception": "+7"
+			},
+			"trait": [
+				{
+					"name": "Firearm Specialist",
+					"entries": [
+						"Being within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on Francisc’s ranged attack rolls with a firearm. In addition, Francisc ignores half cover and three-quarters cover when making ranged attacks with a firearm. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Francisc may either make two Brass Knuckle actions or one Hunting Rifle action. "
+					]
+				},
+				{
+					"name": "Hunting Rifle",
+					"entries": [
+						"{@atk rw} {@hit +4} to hit, range 80/240 ft., one target. {@h}13 ({@damage 2d10 + 2}) Piercing damage. The target must succeed on a  {@dc 14} saving throw or be knocked {@condition prone}. "
+					]
+				},
+				{
+					"name": "Brass Knuckle",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d8 + 9}) damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"attachedItems": [
+				"hunting rifle|dmg"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"invisible",
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Hunter’s Mark",
+					"entries": [
+						"Francisc points at one creature he can see within 150 feet, marking it for death. The mark lasts for 1 hour, until the target dies, or Francisc uses this Bonus Action again. While the target is marked in this way, Francisc and any allies within 20ft of him have Advantage on attack rolls against the target, and the target gains no benefit from the {@condition Invisible|XPHB} condition against them."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			]
+		}
+	]
+}

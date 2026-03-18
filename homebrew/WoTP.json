@@ -17,7 +17,6 @@
 	},
 	"monster": [
 		{
-			"uniqueId": "9559d55a-39e4-4b3c-9a01-391345081f7a",
 			"name": "Viorela Codrin",
 			"size": [
 				"M"
@@ -166,7 +165,6 @@
 			]
 		},
 		{
-			"uniqueId": "3e91ba66-0dd2-4066-9cf9-640ac665dc9e",
 			"name": "Francisc Codrin",
 			"size": [
 				"M"
@@ -272,6 +270,132 @@
 			],
 			"damageTags": [
 				"P"
+			]
+		},
+		{
+			"name": "Marionette of Philomel",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "13d8 + 30",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 15,
+			"int": 18,
+			"wis": 12,
+			"cha": 6,
+			"passive": 10,
+			"cr": "5",
+			"shortName": "Marionette",
+			"skill": {
+				"acrobatics": "+10",
+				"perception": "+7",
+				"nature": "+7"
+			},
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Crystal Bell's Chime",
+					"entries": [
+						"The marionette is magically bound to one of Philomel's glass bells. While the marionette and the bell are on the same plane, the marionette can be telepathically summoned by the chime of the bell, and it knows the distance and direction to the bell. If the marionette is within 60 feet of any creature holding the bell, half of any damage that creature takes is transferred to the marionette. "
+					]
+				},
+				{
+					"name": "Philomel's Tactics",
+					"entries": [
+						"the marionette cannot be compelled to act against Philomel's initial commands, nor can it be convinced to bring any sort of harm towards her. Additonally, if the marionette is within 5 feet of Philomel's allies, it has advantage on attack rolls against a creature."
+					]
+				},
+				{
+					"name": "Haunted",
+					"entries": [
+						"If the marionette is subjected to necrotic damage, it becomes {@condition paralyzed} until the start of its next turn. "
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The marionette doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"traitTags": [
+				"Unusual Nature"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The marionette makes three Armblade attacks."
+					]
+				},
+				{
+					"name": "Armblade",
+					"entries": [
+						"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) Slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The marionette casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Chill Touch|XPHB}",
+						"{@spell Dancing Lights|XPHB}"
+					],
+					"daily": {
+						"2": [
+							"{@spell Silence|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"N"
 			]
 		}
 	]

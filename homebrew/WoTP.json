@@ -162,7 +162,8 @@
 				"constitution",
 				"intelligence",
 				"wisdom"
-			]
+			],
+			"uniqueId": "bc836d50-e13c-4343-b975-b568f5586ac8"
 		},
 		{
 			"name": "Francisc Codrin",
@@ -270,7 +271,8 @@
 			],
 			"damageTags": [
 				"P"
-			]
+			],
+			"uniqueId": "9377a557-a37a-48fb-b80f-d6eb9c64ead3"
 		},
 		{
 			"name": "Marionette of Philomel",
@@ -396,6 +398,166 @@
 			],
 			"damageTagsSpell": [
 				"N"
+			],
+			"uniqueId": "68bd5004-9088-4d0a-acf1-5885ac74c304"
+		},
+		{
+			"uniqueId": "288ab08f-9733-4ab8-aaf8-6091d8842ce8",
+			"name": "Monica Codrin",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "13d8 + 13",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 18,
+			"cha": 18,
+			"passive": 20,
+			"cr": "6",
+			"shortName": "Monica",
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Bell-Bearer's Sight",
+					"entries": [
+						"Monica's glass eye acts as a crystal ball of true seeing. If this eye is removed from her person in any manner, she immediately becomes {@condition petrified}. "
+					]
+				},
+				{
+					"name": "Sanguine Senses",
+					"entries": [
+						"Monica can pinpoint the location of any creature with a heartbeat that is within 60 feet of her, and can sense the general direction of such creatures within 120 feet of her. "
+					]
+				},
+				{
+					"name": "Attuned to the Fates",
+					"entries": [
+						"Monica carries a tarokka deck, and is proficient with it. "
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Consult the Fates {@recharge}",
+					"entries": [
+						"When Monica or a creature that she can see makes an attack roll, a saving throw, or an ability check, she can cause that roll to be made with either advantage or disadvantage. "
+					]
+				},
+				{
+					"name": "Counterspell (2/Day)",
+					"entries": [
+						"Monica casts counterspell in response to that spell's trigger, using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Monica makes 2 melee attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit +2} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Monica may cast one of the following spells requiring no material components and using wisdom as her spellcasting ability:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Druidcraft|XPHB}",
+						"{@spell Guidance|XPHB}",
+						"{@spell Ice Knife|XPHB}",
+						"{@spell Speak with Dead|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Bless|XPHB}",
+							"{@spell Healing Word|XPHB}",
+							"{@spell Mind Spike|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"save": {
+				"cha": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"sleight of hand": "+8",
+				"performance": "+7",
+				"perception": "+10",
+				"insight": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"Primordial",
+				"Celestial"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"P",
+				"CE"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"C",
+				"P",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			]
 		}
 	]

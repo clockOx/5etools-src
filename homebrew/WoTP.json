@@ -1,0 +1,560 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WhispersofthePoppets",
+				"abbreviation": "WoTP",
+				"full": "Whispers of the Poppets",
+				"version": "1.0.0",
+				"authors": [
+					"clockOx"
+				],
+				"convertedBy": [
+					"clockOx"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Viorela Codrin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "16d8",
+				"average": 72
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 16,
+			"int": 20,
+			"wis": 18,
+			"cha": 16,
+			"passive": 14,
+			"cr": "6",
+			"shortName": "Viorela",
+			"senses": [
+				"truesight 20 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"skill": {
+				"religion": "+7",
+				"intimidation": "+5",
+				"insight": "+8",
+				"arcana": "+9"
+			},
+			"save": {
+				"int": "+7",
+				"dex": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Viorela casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Chill Touch|XPHB}",
+								"{@spell Mage Hand|XPHB}",
+								"{@spell Message|XPHB}",
+								"{@spell Prestidigitation|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell Command|XPHB}",
+								"{@spell Mage Armor|XPHB}",
+								"{@spell Ray of Sickness|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell Hold Person|XPHB}",
+								"{@spell Tasha's Mind Whip|TCE}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell Animate Dead|XPHB}",
+								"{@spell Enemies Abound|XGE}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell Arcane Eye}",
+								"{@spell Blight}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Viorela has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) Piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Francisc Codrin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 97,
+				"formula": "15d12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 16,
+			"cha": 14,
+			"passive": 17,
+			"cr": "0",
+			"shortName": "Francisc",
+			"senses": [
+				"truesight 20 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+4",
+				"nature": "+3",
+				"perception": "+7"
+			},
+			"trait": [
+				{
+					"name": "Firearm Specialist",
+					"entries": [
+						"Being within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on Francisc’s ranged attack rolls with a firearm. In addition, Francisc ignores half cover and three-quarters cover when making ranged attacks with a firearm. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Francisc may either make two Brass Knuckle actions or one Hunting Rifle action. "
+					]
+				},
+				{
+					"name": "Hunting Rifle",
+					"entries": [
+						"{@atk rw} {@hit +4} to hit, range 80/240 ft., one target. {@h}13 ({@damage 2d10 + 2}) Piercing damage. The target must succeed on a  {@dc 14} saving throw or be knocked {@condition prone}. "
+					]
+				},
+				{
+					"name": "Brass Knuckle",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 1d8 + 9}) damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"attachedItems": [
+				"hunting rifle|dmg"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"invisible",
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Hunter’s Mark",
+					"entries": [
+						"Francisc points at one creature he can see within 150 feet, marking it for death. The mark lasts for 1 hour, until the target dies, or Francisc uses this Bonus Action again. While the target is marked in this way, Francisc and any allies within 20ft of him have Advantage on attack rolls against the target, and the target gains no benefit from the {@condition Invisible|XPHB} condition against them."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Marionette of Philomel",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "13d8 + 30",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 45
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 15,
+			"int": 18,
+			"wis": 12,
+			"cha": 6,
+			"passive": 10,
+			"cr": "5",
+			"shortName": "Marionette",
+			"skill": {
+				"acrobatics": "+10",
+				"perception": "+7",
+				"nature": "+7"
+			},
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Crystal Bell's Chime",
+					"entries": [
+						"The marionette is magically bound to one of Philomel's glass bells. While the marionette and the bell are on the same plane, the marionette can be telepathically summoned by the chime of the bell, and it knows the distance and direction to the bell. If the marionette is within 60 feet of any creature holding the bell, half of any damage that creature takes is transferred to the marionette. "
+					]
+				},
+				{
+					"name": "Philomel's Tactics",
+					"entries": [
+						"the marionette cannot be compelled to act against Philomel's initial commands, nor can it be convinced to bring any sort of harm towards her. Additonally, if the marionette is within 5 feet of Philomel's allies, it has advantage on attack rolls against a creature."
+					]
+				},
+				{
+					"name": "Haunted",
+					"entries": [
+						"If the marionette is subjected to necrotic damage, it becomes {@condition paralyzed} until the start of its next turn. "
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The marionette doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"traitTags": [
+				"Unusual Nature"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The marionette makes three Armblade attacks."
+					]
+				},
+				{
+					"name": "Armblade",
+					"entries": [
+						"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) Slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The marionette casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Chill Touch|XPHB}",
+						"{@spell Dancing Lights|XPHB}"
+					],
+					"daily": {
+						"2": [
+							"{@spell Silence|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"N"
+			]
+		},
+		{
+			"name": "Monica Codrin",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"source": "WhispersofthePoppets",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "13d8 + 13",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 18,
+			"cha": 18,
+			"passive": 20,
+			"cr": "6",
+			"shortName": "Monica",
+			"isNpc": true,
+			"trait": [
+				{
+					"name": "Bell-Bearer's Sight",
+					"entries": [
+						"Monica's glass eye acts as a crystal ball of true seeing. If this eye is removed from her person in any manner, she immediately becomes {@condition petrified}. "
+					]
+				},
+				{
+					"name": "Sanguine Senses",
+					"entries": [
+						"Monica can pinpoint the location of any creature with a heartbeat that is within 60 feet of her, and can sense the general direction of such creatures within 120 feet of her. "
+					]
+				},
+				{
+					"name": "Attuned to the Fates",
+					"entries": [
+						"Monica carries a tarokka deck, and is proficient with it. "
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Consult the Fates {@recharge}",
+					"entries": [
+						"When Monica or a creature that she can see makes an attack roll, a saving throw, or an ability check, she can cause that roll to be made with either advantage or disadvantage. "
+					]
+				},
+				{
+					"name": "Counterspell (2/Day)",
+					"entries": [
+						"Monica casts counterspell in response to that spell's trigger, using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Monica makes 2 melee attacks"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit +2} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Monica may cast one of the following spells requiring no material components and using wisdom as her spellcasting ability:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Druidcraft|XPHB}",
+						"{@spell Guidance|XPHB}",
+						"{@spell Ice Knife|XPHB}",
+						"{@spell Speak with Dead|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Bless|XPHB}",
+							"{@spell Healing Word|XPHB}",
+							"{@spell Mind Spike|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"save": {
+				"cha": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"sleight of hand": "+8",
+				"performance": "+7",
+				"perception": "+10",
+				"insight": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Infernal",
+				"Primordial",
+				"Celestial"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"P",
+				"CE"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"C",
+				"P",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		}
+	]
+}
